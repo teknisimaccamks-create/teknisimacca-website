@@ -3,126 +3,174 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TeknisimaccaMks - PT Haeruddin Berkah Berdaya</title>
+    <title>TeknisimaccaMks - Professional Vendor</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Plus Jakarta Sans', sans-serif; }
-        html { scroll-behavior: smooth; }
-        .hero-navy { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); }
+        :root { --industrial-gold: #facc15; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #000; color: #fff; scroll-smooth: auto; }
+
+        /* INDUSTRIAL HERO BACKGROUND */
+        .hero-industrial {
+            position: relative;
+            background: 
+                linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9)),
+                url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=2000&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            min-height: 100vh;
+        }
+
+        .concrete-texture { background-image: url('https://www.transparenttextures.com/patterns/asfalt-light.png'); }
+        
+        .calc-step-card {
+            background: rgba(15, 23, 42, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: 0.3s;
+        }
+        
+        .gold-glow { text-shadow: 0 0 20px rgba(250, 204, 21, 0.5); }
+        
+        .btn-vendor {
+            background: var(--industrial-gold);
+            border-bottom: 4px solid #a1840b;
+        }
+
+        .pill-professional {
+            border-left: 2px solid var(--industrial-gold);
+            background: linear-gradient(to right, rgba(250, 204, 21, 0.05), transparent);
+        }
+
+        /* FLOATING CTA FOR MOBILE/DESKTOP */
+        .floating-cta {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 100;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+            40% {transform: translateY(-10px);}
+            60% {transform: translateY(-5px);}
+        }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-900">
+<body class="concrete-texture">
 
-    <nav class="fixed w-full z-50 bg-slate-900/90 backdrop-blur-md border-b border-slate-800 text-white py-4 shadow-xl">
-        <div class="container mx-auto px-6 flex justify-between items-center">
+    <div class="floating-cta">
+        <a href="https://wa.me/6285750064910" class="bg-green-600 text-white p-4 rounded-full shadow-2xl flex items-center justify-center border-2 border-white">
+            <i class="fab fa-whatsapp text-3xl"></i>
+        </a>
+    </div>
+
+    <nav class="fixed w-full z-50 py-4 px-8 bg-black/90 border-b border-white/5 backdrop-blur-md">
+        <div class="container mx-auto flex justify-between items-center">
             <div>
-                <h1 class="font-black text-xl italic text-blue-500 leading-none uppercase">TEKNISIMACCAMKS</h1>
-                <p class="text-[9px] uppercase tracking-[0.2em] text-slate-400 mt-1">PT Haeruddin Berkah Berdaya</p>
+                <h1 class="text-xl font-black italic text-yellow-400 leading-none uppercase">TEKNISIMACCAMKS</h1>
+                <p class="text-[7px] font-bold tracking-[0.4em] text-slate-500 uppercase mt-1 italic">PT Haeruddin Berkah Berdaya</p>
             </div>
-            <a href="https://wa.me/6285750064910" class="bg-green-600 text-white px-4 py-2 rounded-lg font-bold text-xs hover:bg-green-700 transition">CHAT ADMIN</a>
+            <a href="https://wa.me/6285750064910" class="text-[9px] font-black uppercase tracking-widest text-black bg-yellow-400 px-4 py-2 rounded">Chat Vendor Now</a>
         </div>
     </nav>
 
-    <section class="hero-navy min-h-[80vh] flex items-center justify-center text-center text-white px-6 pt-20">
-        <div class="max-w-4xl">
-            <h1 class="text-4xl md:text-7xl font-extrabold mb-6 uppercase tracking-tighter">
-                SOLUSI AC & <br><span class="text-blue-400 italic">LISTRIK AMAN</span>
+    <section class="hero-industrial flex flex-col items-center justify-center px-6 pt-24 pb-16 text-center">
+        
+        <div class="mb-12">
+            <h1 class="text-5xl md:text-8xl font-black uppercase leading-none gold-glow mb-2">
+                INSTALASI LISTRIK <span class="italic text-transparent" style="-webkit-text-stroke: 1px white;">& AC</span>
             </h1>
-            <p class="text-slate-400 text-lg mb-10 max-w-2xl mx-auto italic font-light leading-relaxed">
-                Layanan Profesional & Terpercaya di Makassar oleh <br><b>PT Haeruddin Berkah Berdaya</b>.
-            </p>
-            
-            <div class="flex flex-col items-center">
-                <a href="https://wa.me/6285750064910" class="bg-green-500 hover:bg-green-600 text-white px-10 py-5 rounded-2xl font-black text-2xl shadow-2xl transition-all transform hover:scale-105 flex items-center border-b-4 border-green-700">
-                    <i class="fab fa-whatsapp mr-3 text-3xl"></i>
-                    0857-5006-4910
-                </a>
-                <p class="mt-4 text-slate-500 text-sm font-semibold tracking-widest uppercase">Klik untuk Respon Cepat</p>
+            <p class="text-slate-400 text-xs md:text-sm uppercase tracking-[0.4em] font-bold">Standard Professional Vendor Makassar</p>
+        </div>
+
+        <div class="w-full max-w-5xl">
+            <div class="grid md:grid-cols-3 gap-4 mb-8">
+                
+                <div class="calc-step-card p-8 rounded-3xl">
+                    <span class="text-[10px] font-black text-yellow-400 uppercase tracking-widest mb-4 block italic text-left">01. Pilih Layanan</span>
+                    <select id="projectType" onchange="calculateNow()" class="w-full bg-slate-900 border border-white/10 p-4 rounded-xl font-bold uppercase text-[10px] tracking-widest outline-none focus:border-yellow-400 cursor-pointer text-center appearance-none">
+                        <option value="ac_cuci">Jasa Cuci AC (Start Rp 85rb)</option>
+                        <option value="listrik">Instalasi Listrik (Titik)</option>
+                        <option value="ac_pasang">Pasang Unit AC (Unit)</option>
+                    </select>
+                </div>
+
+                <div class="calc-step-card p-8 rounded-3xl">
+                    <span class="text-[10px] font-black text-yellow-400 uppercase tracking-widest mb-4 block italic text-left">02. Input Volume</span>
+                    <input type="number" id="volume" value="1" min="1" oninput="calculateNow()" class="w-full bg-transparent border-b-2 border-yellow-400/30 p-2 font-black text-4xl outline-none focus:border-yellow-400 text-center">
+                </div>
+
+                <div class="calc-step-card p-8 rounded-3xl border-yellow-400/30 bg-yellow-400/5">
+                    <span class="text-[10px] font-black text-yellow-400 uppercase tracking-widest mb-4 block italic text-left">03. Hasil Estimasi</span>
+                    <div class="text-4xl font-black text-yellow-400 tracking-tighter mb-2" id="totalResult">Rp 85.000</div>
+                    <p class="text-[8px] text-slate-500 uppercase font-bold">Biaya Awal Vendor</p>
+                </div>
+
             </div>
+
+            <button onclick="sendToWA()" class="w-full max-w-md mx-auto btn-vendor text-black py-5 rounded-2xl font-black uppercase tracking-widest text-xs flex items-center justify-center gap-3 hover:scale-105 transition-all shadow-2xl">
+                <i class="fab fa-whatsapp text-xl"></i> AJUKAN PENAWARAN & SURVEY
+            </button>
         </div>
     </section>
 
-    <section id="layanan" class="py-24 container mx-auto px-6">
-        <div class="grid md:grid-cols-2 gap-12">
-            
-            <div class="bg-white rounded-[2.5rem] shadow-2xl overflow-hidden border border-slate-200 group">
-                <div class="h-80 overflow-hidden relative bg-slate-200">
-                    <img src="https://images.unsplash.com/photo-1621905231291-00749ceb6f86?w=800&auto=format&fit=crop" 
-                         alt="Teknisi AC PT Haeruddin" 
-                         class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 to-transparent flex items-end p-8">
-                        <h3 class="text-white text-3xl font-black italic uppercase">CUCI & SERVIS AC</h3>
+    <section class="py-24 container mx-auto px-8 border-t border-white/5">
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+            <div>
+                <h2 class="text-4xl font-black uppercase italic leading-none mb-8">PROFESSIONAL <br><span class="text-yellow-400">SERVICE VENDOR.</span></h2>
+                <div class="space-y-8">
+                    <div class="pill-professional p-6">
+                        <h4 class="font-black uppercase text-sm mb-2">Transparansi Harga & Material</h4>
+                        <p class="text-slate-500 text-xs italic">Setiap pengerjaan dilengkapi dengan rincian material yang digunakan. Tanpa mark-up harga yang tidak wajar.</p>
+                    </div>
+                    <div class="pill-professional p-6">
+                        <h4 class="font-black uppercase text-sm mb-2">Standar Keamanan K3</h4>
+                        <p class="text-slate-500 text-xs italic">Menjamin keamanan teknisi dan area kerja dengan peralatan standar industri yang tersertifikasi.</p>
+                    </div>
+                    <div class="pill-professional p-6">
+                        <h4 class="font-black uppercase text-sm mb-2">Laporan Digital Maintenance</h4>
+                        <p class="text-slate-500 text-xs italic">Dapatkan riwayat perawatan unit secara berkala yang tersimpan dalam sistem data kami untuk kemudahan audit.</p>
                     </div>
                 </div>
-                <div class="p-8">
-                    <ul class="space-y-4 mb-8 text-slate-700 font-bold">
-                        <li class="flex items-center"><i class="fas fa-snowflake text-blue-500 mr-3"></i> Cuci AC Berkala</li>
-                        <li class="flex items-center"><i class="fas fa-gas-pump text-blue-500 mr-3"></i> Isi / Tambah Freon</li>
-                        <li class="flex items-center"><i class="fas fa-wrench text-blue-500 mr-3"></i> Perbaikan AC Bocor</li>
-                    </ul>
-                    <a href="https://wa.me/6285750064910" class="block text-center bg-slate-900 text-white py-4 rounded-xl font-bold hover:bg-blue-600 transition shadow-lg">PESAN JASA AC</a>
-                </div>
             </div>
-
-            <div class="bg-white rounded-[2.5rem] shadow-2xl overflow-hidden border border-slate-200 group">
-                <div class="h-80 overflow-hidden relative bg-slate-200">
-                    <img src="https://images.unsplash.com/photo-1558389186-438424b00a32?w=800&auto=format&fit=crop" 
-                         alt="Teknisi Listrik PT Haeruddin" 
-                         class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 to-transparent flex items-end p-8">
-                        <h3 class="text-white text-3xl font-black italic uppercase">INSTALASI LISTRIK</h3>
-                    </div>
+            <div class="hidden md:block relative">
+                <div class="w-full h-96 border-8 border-white/5 rounded-[3rem] flex items-center justify-center overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?q=80&w=800&auto=format&fit=crop" class="grayscale opacity-50" alt="Technical Work">
                 </div>
-                <div class="p-8">
-                    <ul class="space-y-4 mb-8 text-slate-700 font-bold text-left">
-                        <li class="flex items-center"><i class="fas fa-bolt text-yellow-500 mr-3"></i> Perbaikan Korsleting</li>
-                        <li class="flex items-center"><i class="fas fa-plug text-yellow-500 mr-3"></i> Instalasi Baru Rumah</li>
-                        <li class="flex items-center"><i class="fas fa-box text-yellow-500 mr-3"></i> Pemasangan Panel MCB</li>
-                    </ul>
-                    <a href="https://wa.me/6285750064910" class="block text-center bg-slate-900 text-white py-4 rounded-xl font-bold hover:bg-yellow-600 transition shadow-lg">PESAN JASA LISTRIK</a>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <section class="py-20 bg-slate-100 border-t">
-        <div class="container mx-auto px-6 max-w-4xl text-center">
-            <h2 class="text-3xl font-black mb-12 italic uppercase">💰 Daftar Biaya Cuci AC</h2>
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-white p-10 rounded-[2rem] shadow-xl border-b-8 border-blue-500">
-                    <p class="text-slate-400 font-bold text-xs mb-2 tracking-widest uppercase">AC 0.5 - 1 PK</p>
-                    <div class="text-6xl font-black text-slate-900 mb-8 font-mono">85<span class="text-2xl text-slate-300 italic">.000</span></div>
-                    <a href="https://wa.me/6285750064910" class="bg-blue-600 text-white px-10 py-3 rounded-full font-bold inline-block shadow-lg">PILIH</a>
-                </div>
-                <div class="bg-white p-10 rounded-[2rem] shadow-xl border-b-8 border-slate-900">
-                    <p class="text-slate-400 font-bold text-xs mb-2 tracking-widest uppercase">AC 1.5 - 2 PK</p>
-                    <div class="text-6xl font-black text-slate-900 mb-8 font-mono">120<span class="text-2xl text-slate-300 italic">.000</span></div>
-                    <a href="https://wa.me/6285750064910" class="bg-slate-900 text-white px-10 py-3 rounded-full font-bold inline-block shadow-lg">PILIH</a>
+                <div class="absolute -bottom-6 -right-6 bg-yellow-400 text-black p-8 rounded-2xl font-black text-center shadow-2xl">
+                    <p class="text-3xl">100%</p>
+                    <p class="text-[8px] uppercase tracking-widest">Professional <br> Guaranteed</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="bg-slate-950 text-white py-20 text-center">
-        <div class="container mx-auto px-6">
-            <h2 class="font-black text-2xl italic text-blue-500 uppercase leading-none">TEKNISIMACCAMKS</h2>
-            <p class="text-slate-600 text-[10px] tracking-[0.4em] uppercase mb-10 font-bold">PT Haeruddin Berkah Berdaya</p>
-            <div class="max-w-md mx-auto space-y-4 text-slate-400 text-sm italic">
-                <p><i class="fas fa-map-marker-alt text-blue-500 mr-2"></i> BTN Tirasa Blok C8 No. 16, Makassar</p>
-                <p><i class="fas fa-phone text-green-500 mr-2"></i> 0857-5006-4910</p>
-            </div>
-            <div class="mt-16 text-[8px] text-slate-800 tracking-[0.5em] uppercase">
-                &copy; 2026 PT HAERUDDIN BERKAH BERDAYA - MAKASSAR
-            </div>
-        </div>
+    <footer class="py-12 border-t border-white/5 text-center">
+        <p class="text-slate-700 font-bold uppercase text-[9px] tracking-[1em]">PT Haeruddin Berkah Berdaya | 2026</p>
     </footer>
 
-    <a href="https://wa.me/6285750064910" class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-2xl hover:scale-110 transition z-50 border-2 border-white">
-        <i class="fab fa-whatsapp text-3xl"></i>
-    </a>
-
+    <script>
+        const basePrices = { ac_cuci: 85000, listrik: 150000, ac_pasang: 250000 };
+        
+        function calculateNow() {
+            const type = document.getElementById('projectType').value;
+            const vol = document.getElementById('volume').value || 0;
+            const total = basePrices[type] * vol;
+            document.getElementById('totalResult').innerText = "Rp " + total.toLocaleString('id-ID');
+        }
+        
+        function sendToWA() {
+            const typeText = document.getElementById('projectType').options[document.getElementById('projectType').selectedIndex].text;
+            const vol = document.getElementById('volume').value;
+            const total = document.getElementById('totalResult').innerText;
+            const msg = `Halo TeknisimaccaMks, saya butuh penawaran vendor resmi:%0A%0A- Jasa: ${typeText}%0A- Volume: ${vol}%0A- Estimasi: ${total}%0A%0AMohon info jadwal survey lokasi.`;
+            window.location.href = `https://wa.me/6285750064910?text=${msg}`;
+        }
+        
+        calculateNow();
+    </script>
 </body>
 </html>
